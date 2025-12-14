@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Star✦Surf✦Net</title>
+<link rel="icon" type="image/x-icon" href="/photos/favicon.png">
+<style>
+    body{
+
+        --body-bg-image: url('photos/madoka.png');
+        
+        /* colors */
+        --green: #3b1606;
+        --green2: #e89b6d;
+        --cream: #fee1bf;
+
+    }
+    .centeredstuff{
+        max-width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+        max-height: 80vh;
+        
+    }
+    .centerimg {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 100%;
+    }
+</style>
+
+<body>
+<link href="mystyle.css" rel="stylesheet">
+
+<!--My links-->
+<div id = "drag" style = "position: absolute;">
+  <div id = "dragheader"> 
+    <span class="winbody" style="display: inline-block; top: 220px; margin-left: 150px; margin-top: 150px; float: left;">
+      <span class="winbar">
+        <span id="buttx" onmousedown="this.style.backgroundImage='url(photos/buttpress_x.png)'"
+          onmouseup="this.style.backgroundImage='url(photos/butt_x.png)'">  
+        </span>
+        <p>
+        <img src="photos/explorer.png" style="position: relative; top: 2px; left: 2px; margin-right: 2px;">
+        Where to...?
+        </p>
+      </span>
+        <div style="height: auto; margin: 0px;">
+          <div class = "wincontent">
+            <div style = "float: left; width: auto; margin: 8px; ">
+              <div style = "text-align: center; font-size: 20px">
+                Explore My page!
+              </div>
+              <ul style="list-style: none; width: 200px; text-align: center; padding-left: 0px; margin: 3px;">
+                <li>
+                  <a id="about me" href="aboutme.html">
+                    <img src="photos/info_ico.png" style="display: inline; margin: 0px; margin-bottom: -1px;">
+                    <p style="font-size: 14px; display: inline;">. . . . . . . . . . . . about me</p>
+                  </a>
+                </li>
+                <li>
+                  <a id= "my favourite things" href="myfavouritethings.html">
+                    <img src="photos/butterfly.png" style="display: inline; margin: 0px; margin-bottom: -1px;">
+                    <p style="font-size: 14px; display: inline;"> . . . . my favourite things</p>
+                  </a>
+                </li>
+                <li>
+                  <a id= "music" href="mymusic.html">
+                    <img src="photos/music.png" style="display: inline; margin: 0px; margin-bottom: -1px;">
+                    <p style="font-size: 14px; display: inline;"> . . . . . . . . . . . . . . . music</p>
+                  </a>
+                </li>
+                <!--
+                <li>
+                  <a id= "my projects" href="myprojects.html">
+                    <img src="photos/command.png" style="display: inline; margin: 0px; margin-bottom: -1px;">
+                    <p style="font-size: 14px; display: inline;"> . . . . . . . . . . . my projects</p>
+                  </a>
+                </li>-->
+                <li>
+                  <a id= "blog" href="blablabla.html">
+                    <img src="photos/note.png" style="display: inline; margin: 0px; margin-bottom: -1px;">
+                    <p style="font-size: 14px; display: inline;"> . . . . . . . . . . . . . . . . . blog</p>
+                  </a>
+                </li>
+                <li>
+                  <a id= "guest book" href="https://starsurf.atabook.org/">
+                    <img src="photos/book.png" style="display: inline; margin: 0px; margin-bottom: -1px;">
+                    <p style="font-size: 14px; display: inline;"> . . . . . . . . . . . . guest book</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+
+<div class = "centeredstuff">
+  <!-- CENTER BOX -->
+  <div> 
+    <span class="winbody" style="display: inline-block; top: 220px; margin-left: 3px;">
+      <span class="winbar">
+        <span id="buttx" onmousedown="this.style.backgroundImage='url(photos/buttpress_x.png)'"
+          onmouseup="this.style.backgroundImage='url(photos/butt_x.png)'">  
+        </span>
+        <p>
+        <img src="photos/internet_ico.png" style="margin-left: 2px; margin-top: 2px; margin-bottom: -2px;">
+        My Favourite Things
+        </p>
+      </span>
+        <div style="height: 100%; margin-left: auto; margin-right: auto;">
+          <div class = "wincontent">
+            <!--
+            <div style = "font-size: 24px; width: auto; margin: auto; text-align: center;">
+                My Favourite Things
+            </div>-->
+            <div style = "width: fit-content; margin-right: 3px;"> 
+               <div class="tab" style = "width: 100%; text-align: center;">
+                    <button class="tablinks" onclick="openCity(event, 'music tab')" id = "default">Music</button>
+                    <button class="tablinks" onclick="openCity(event, 'Anime')">Anime</button>
+                    <button class="tablinks" onclick="openCity(event, 'Manga')">Manga</button>
+                    <button class="tablinks" onclick="openCity(event, 'Characters')">Characters</button>
+                    <button class="tablinks" onclick="openCity(event, 'Video Games')">Video Games</button>
+                    <button class="tablinks" onclick="openCity(event, 'Art')">Art</button>                    
+                </div>
+
+                <div id="music tab" class="tabcontent" style = "width: 750px;">
+                    <h1>Music</h1>
+                    <img src="photos/chart.png" style="width: 350px; border: 0px black solid; margin: -20px -8px 16px 12px; float: right;">
+                    <div class = "tabbox">
+                        <p>Music is probably my favourite thing ever! I love it so much that I have dedicated pages for it!</p>
+                        <p>So here I'll just list some of my fabourite things to listen to!</p>
+                        <p>In terms of style, I enjoy listening to most styles and discovering new things is always something
+                            I'm looking to do. My favourite genres would be: Jazz (all of it), Shibuya-kei, Soul, MPB/Bossa Nova
+                            and anything with samples or that mixes electronic and more traditional approaches together. 
+                        </p> 
+                        <h2>Favourite Albums</h2>                  
+                        <ul>
+                          <li>
+                              <h3>My Favourite Things - John Coltrane</h3>
+                              <p>
+                                  This is my favourite jazz album ever, the title track is the answer I usually give out
+                                  when someone asks me the terrible question of "What is your favourite song?" lol.
+                                  There is something so magical about John Coltrane's classic quartet and here they manage to balance 
+                                  beauty and intensity in a way they never manage to replicate exactly. 
+                                  Well, technically its not the classic quartet since the bassist is different - here its Steve Davis and the classic
+                                  quartet is with Jimmy Garrison on bass - but the rest of the musicians are the same. 
+                              </p>
+                              <p>
+                                  Also can we take a moment to appreciate the insanity that is using the coltrane changes 
+                                  over Gershwin's "But Not For Me"? How does it work so well???
+                              </p>
+                          </li>
+                          <li>
+                              <h3>Fantasma - Cornelius</h3>
+                              <p>
+                                  This album man... its... its a weird album to say the least. First 2 or 3 times I tried listening to it 
+                                  I couldn't even get through half of the album! Yet, the intro track - "mic check" - intrigued me so much 
+                                  with its innovative use of sound design and music production in such an artistic way to write what should be
+                                  a shitty comedy sketch in a way that is somehow profoundly moving and that you will keep coming back to.
+                              </p>
+                              <p> 
+                                  I mean - could you even call it a proper song? As I continued listening, and the initial distate for its 
+                                  eclectic and all over the place style sound was left behind, I began to hear this same unique and perfectly executed
+                                  experimentation with weird sounds and electronic music alongside the more traditional songwriting of cornelius throughout
+                                  all the songs. With each listen, I heard new sounds and eventually it became one of my biggest sources of inspiration for everything.
+                              </p>
+                              <p> 
+                                  Its not just its unique sound that I love, however, its variety in emotion throughout is like I've never heard before. 
+                                  There are mellow and dreamy sounds, there are fun and ridiculous sounds, there are happy sounds, there are calm sounds, there are 
+                                  intense sounds, there are melancholy sounds. Its noisy, its quiet, its experimental, its familiar, its ahead of its time yet it also 
+                                  sounds dated. I guess, to me, it might just be everything. 
+                              </p>
+                          </li>
+                          <li>
+                              <h3>Donuts - J Dilla</h3> 
+                              <p>
+                                  An album that showed me the beauty of sampling by the producer who inspired me to pick up music production. 
+                              </p>
+                              <p>
+                                  So many beautiful samples manipulated in such a beautiful way that they allow J Dilla to sing through them. 
+                                  Somehow, there's so much emotion poured into each of the sample chops, each drenched with such a pure love for the
+                                  original tracks yet the complete reinvention of the songs elevates them further. An album where its parts are near perfect
+                                  yet somehow the whole manages to be far greater than the sum of its components. 
+                              </p>
+                              <p>
+                                  Oh, I can't stand to see you cry...
+                              </p>
+                          </li>
+                          <li>
+                              <h3>Lamp - For Lovers</h3>
+                              <p>
+                                Lamp's "for lovers" has become my go-to comfort album. The perfect album to read manga or study to for me. While it may be the least
+                                unique or influential album on the least it is an album that just perfectly suits me. The soft tones, the touch of nostalgia 
+                                combined with the touch of positivity. The jazz, the bossa nova, the chords (and oh my god the chords...), the melodies, everything was made perfect for my tastes. 
+                                More than just that however, the album shines in how concise it provides a complete experience. Not a single second is boring or recycling ideas, each
+                                song complements the previous songs perfectly and no two songs serve the same function. The story created by each songs individual sounds is beautiful in of itself. 
+                              </p>
+                              <p>
+                                This album just sounds like reading wholesome slice of life or romance manga with a warm coffee on a slow and quiet spring morning, and there is nothing more me than that
+                              </p>
+                          </li>
+                          <li> 
+                              <h3>Milton Nascimento & Lô Borges - Clube Da Esquina</h3>
+
+                              <p>
+                                This album is just so emotionally powerful to me. So many songs that have moved me to tears - in fact it was the first album
+                                to ever move me to tears on first listen - midway through "Clube Da Esquina nº2". The genius of Lô Borges perfectly complements 
+                                the genius of Milton Nascimento here and the sound of the album is just so entrancing. 
+                              </p>
+                              <p>
+                                The songwriting and isntrumentation is exceptional throughout, perfectly combining influences from the beatles and traditional Brazilian 
+                                styles in a way that elevates both those sounds. The lyrics are some of my favourites of all time and I think the opening track "Tudo O Que Você Podia Ser"
+                                has some of the most powerful lyrics of all time - especially when placed within the context of 1970s Brazil and the oppressive government. 
+                              </p>
+                            </li>
+
+                            <li>
+                                <h3>Waltz For Debby - Bill Evans Trio</h3>
+
+                                <p>Ok I was only planning on doing 5 favourite albums but I had to add a bonus jazz one...</p>
+                                <p>
+                                  Bill evans... this has been said many times, but he is the pianist with possibly the greatest voicings I've ever heard.
+                                  He manages to bring out so much emotion from the piano with each individual chord... I don't even know how. 
+                                  And that's just talking about Evans... The interplay between the trio as a whole is incredibly special,
+                                  especially that of Scott LaFaro on the bass. The bass on this album doesn't just accompany - it provides melodic ideas 
+                                  and development just as the piano does. 
+                                </p>
+                                <p>
+                                  This album is so special to me as it has accompanied me through my hardest moments - it puts me at ease. 
+                                </p>
+                              </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="Anime" class="tabcontent" style = "width: 750px;">
+                  <img src="photos/anime.jpg" style="width: 350px; border: 2px black solid; margin: 0px -8px 16px 12px; float: right;">
+                  <div class = "tabbox">
+                    <h3>Anime</h3>
+                    <p>You might not have noticed this yet but I'm actually a big anime fan! Growing up my favourite
+                      anime was JoJo's Bizarre Adventure, but now I prefer to watch romance, slice of life or psychological animes 
+                      more. There's something I find so comforting about the pretty art styles of anime compared to other more live 
+                      action shows... 
+                    </p> 
+                    <p>Below you can read a rant about some of my favourite animes, also I cannot guarantee that there won't be any 
+                      spoilers in these so be careful!!</p>
+
+                    <h2>Favourite Animes</h2>                  
+                    <ul>
+                      <li>
+                        <h3>The Monogatari Series</h3>
+                        <p>
+                          I love the characters and writing its so good... you have to ignore some stuff but aside from that...
+                        </p>
+                        <p>
+                          Also the art style and soundtrack is too good! 
+                        </p>
+                      </li>
+                      <li>
+                        <h3>Cowboy Bebop</h3>
+                        <p>Love the art and the characters, this story taught me to appreciate charcters in stories, 
+                          changed the way I look at stories in general. </p>
+                        </li>
+                      <li>
+                        <h3>Evangelion</h3>
+                        <p>Is there anything I can say about this that hasn't already been said? I'm literally rei...</p>
+                      </li>
+                      <li>
+                        <h3>Madoka Magica</h3>
+                        <p>Peak of doomed yuri... makes me cry every time... I love homura as a character and how 
+                          homura and madoka compliment each other as characters. It's so beautiful... hopefully the
+                          movie will be just as peak!
+                        </p>
+                      </li>
+                      <li>
+                        <h3>Serial Experiments Lain</h3>
+                        <p>Scarily ahead of its time... story is great and I probably relate way more than I would like 
+                          to... aesthetic is also unmatched.
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div id="Manga" class="tabcontent" style = "width:750px;">
+                  <img src="photos/manga.jpg" style="width: 350px; border: 2px black solid; margin: 0px -8px 16px 12px; float: right;">
+                  <h3>Manga</h3>
+                  <p>I love reading manga especially romance and slice of life stuff! Also I lowkey read
+                    too much yuri lol... 
+                  </p>
+                </div>
+                <div id="Characters" class="tabcontent" style = "width:750px;">
+                  <img src="photos/characters.jpg" style="width: 350px; border: 2px black solid; margin: 0px -8px 16px 12px; float: right;">
+                  <h3>Characters</h3>
+                  <p>Most of my favourite characters are just introverted anime girls (except faye)... sigh... they're just like me... 
+                  </p>
+                </div>
+                <div id="Video Games" class="tabcontent">
+                    <h3>Video Games</h3>
+                    <p>Under construction</p>
+                </div>
+                <div id="Art" class="tabcontent">
+                    <h3>Art</h3>
+                    <p>Under construction</p>
+                </div>
+                <!-- go back home link-->
+                <div style = "height: 40px;">
+                    <a id= "home" href="index.html" style = "position: relative; top:-16px; left: 18%;">
+                        <img src="photos/warning.png" style="display: inline; margin: 1px; position: relative; top: 12px;">
+                        <p style="font-size: 14px; display: inline;">I want to go back home!</p>
+                    </a>
+                </div>
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<!--my links-->
+<div id = "container">
+  <div id = "drag2" style = "display: inline-block; position: absolute; top: 12%; left: 67%;">
+    <div id = "drag2header"> 
+      <span class="winbody" style="display: inline-block; top: 220px; margin-left: 150px; margin-top: 150px; float: right;">
+        <span class="winbar">
+          <span id="buttx" onmousedown="this.style.backgroundImage='url(photos/buttpress_x.png)'"
+            onmouseup="this.style.backgroundImage='url(photos/butt_x.png)'">  
+          </span>
+          <p>
+          <img src="photos/mci.png" style="position: relative; top: 2px; left: 2px; margin-right: 2px;">
+          Before you leave...
+          </p>
+        </span>
+          <div style="height: auto; margin: 0px;">
+            <div class = "wincontent">
+              <div style = "float: left; width: auto; margin: 8px; ">
+                <div style = "text-align: center; font-size: 20px">
+                  My Other Accounts!
+                </div>
+                <ul style="list-style: none; width: 200px; text-align: center; padding-left: 0px; margin: 3px;">
+                  <li>
+                    <a id="about me" href="https://youtube.com/@starfruit-surfrider?si=fEmshRsmxew34XtT">
+                      <img src="photos/video.png" style="display: inline; margin: 0px; margin-bottom: -1px;">
+                      <p style="font-size: 14px; display: inline;">. . . . . . . . . . . . youtube</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a id= "bandcamp" href="https://starfruitsurfrider.bandcamp.com/">
+                      <img src="photos/cd.png" style="display: inline; margin: 0px; margin-bottom: -1px;">
+                      <p style="font-size: 14px; display: inline;"> . . . . . . . . . . bandcamp</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a id= "rateyourmusic" href="https://rateyourmusic.com/~faye_valentine1">
+                      <img src="photos/music.png" style="display: inline; margin: 0px; margin-bottom: -1px;">
+                      <p style="font-size: 14px; display: inline;"> . . . . . . . rateyourmusic</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a id= "anilist" href="https://anilist.co/user/s3njou/">
+                      <img src="photos/playicon.png" style="display: inline; margin: 0px; margin-bottom: -1px;">
+                      <p style="font-size: 14px; display: inline;"> . . . . . . . . . . . . . anilist</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </span>
+    </div>
+  </div>
+</div>
+
+<!--just a draggable image box-->
+<div id = "container">
+  <div id = "drag3" style = "display: inline-block; position: absolute; top: -15%; left: -7%;">
+    <div id = "drag3header"> 
+      <span class="winbody" style="display: inline-block; top: 220px; margin-left: 150px; margin-top: 150px; float: right;">
+        <span class="winbar">
+          <span id="buttx" onmousedown="this.style.backgroundImage='url(photos/buttpress_x.png)'"
+            onmouseup="this.style.backgroundImage='url(photos/butt_x.png)'">  
+          </span>
+          <p>
+          <img src="photos/sun.png" style="position: relative; top: 2px; left: 2px; margin-right: 2px;">
+            Mizutani
+          </p>
+        </span>
+          <div style="height: auto; margin: 0px;">
+            <div class = "wincontent">
+              <img src="photos/mizutani.jpg" style="width: 100px; border: 1px black solid; display: block; margin: auto;">
+            </div>
+          </div>
+        </div>
+      </span>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
+<script>
+//Make the DIV element draggagle:
+dragElement(document.getElementById("drag"));
+dragElement(document.getElementById("drag2"));
+dragElement(document.getElementById("drag3"));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header")) {
+    /* if present, the header is where you move the DIV from:*/
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  } else {
+    /* otherwise, move the DIV from anywhere inside the DIV:*/
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    /* stop moving when mouse button is released:*/
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+
+document.getElementById("default").click();
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>

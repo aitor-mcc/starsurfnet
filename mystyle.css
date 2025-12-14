@@ -1,0 +1,353 @@
+:root {
+    --header-image: url('');
+    --body-bg-image: url('photos/playboyhd.jpg');
+    
+    /* colors */
+    --green: #798777;
+    --green2: #798777;
+    --cream: #F8EDE3;
+    --shade: #747071;
+    --barcolor: #c5c0c6;
+}
+
+@font-face {
+  font-family: 'MyWebFont';
+  src: url(https://starsurf.neocities.org/fonts/w95fa.woff);
+}
+
+#container {
+    /*max-width: 1200px;
+    margin: 0 auto;*/
+    background-image: var(--body-bg-image);
+}
+
+
+body {
+  background: var(--body-bg-image) no-repeat top fixed;
+  background-size: cover;
+  font-family: 'MyWebFont';
+}
+.winbody{
+  border: 3px inset var(--green);
+  background-color: var(--cream);
+  width: fit-content;
+  height: fit-content;
+  box-shadow: 3px 3px 5px black;  
+}
+
+h1 {
+  font-size: 24px;
+}
+
+
+p span{
+  background-color: var(--green);
+  
+}
+
+.wincontent{
+  max-height: 80%;
+  font-size: 14px;
+  margin: 8px;
+  font-family: 'MyWebFont';
+}
+
+.winbar{
+  margin-top : -10px;
+  margin-left : 3px;
+  margin-right : 3px;
+  width: auto;
+  display: block;
+  height: 18px;
+  color: var(--cream);
+  background-color: var(--green);
+  padding-bottom: 3px
+}
+
+#buttx{
+  float: right;
+  margin-right: 2px;
+  margin-top: 3px;
+  width: 16px; 
+  height: 14px; 
+  background-image: url(photos/butt_x.png);
+}
+
+#buttx:active{
+  float: right;
+  margin-right: 2px;
+  margin-top: 3px;
+  width: 16px; 
+  height: 14px; 
+  background-image: url(photos/buttpress_x.png);
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.boxwithin {
+  padding: 5px;
+  border: 3px solid var(--green);
+  background-image: url(photos/texture.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 0px 10px 0px black;  
+}
+
+
+/* ----------- TABS ---------*/
+/* Style the tab  border-right: 2px solid var(--green) ;
+  border-right: 2px solid var(--green) ;
+  border-left: 2px solid var(--green)  ;
+  border-bottom: 2px solid var(--green); */
+.tab {
+  overflow: hidden;
+  border: 1px outset var(--green);
+  box-shadow: 0px 0px 0px 0px black; 
+  background-color: var(--green2); 
+}
+
+.tablinks{
+  font-family: "Times New Roman";
+}
+/* Style the buttons inside the tab */
+.tab button {
+  border: 1px transparent solid;
+  background-color: var(--green2);
+  float: left;
+  outline: none;
+  cursor: pointer;
+  margin: 2px;  
+  padding: 6px 10px;
+  transition: 0s;
+  font-size: 17px;
+  font-family: 'MyWebFont';
+}
+
+/* Change background color oont buttons on hover */
+.tab button:hover {
+  border-left: 1px solid var(--cream);
+  border-top: 1px solid var(--cream);
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  border-right: 1px solid var(--cream);
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid var(--cream); 
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  font-size: 14px;
+  margin: 8px;
+  font-family: 'MyWebFont';
+}
+
+.tabbox{
+  max-height: 55vh;
+  overflow-y: auto;
+  padding-right: 8px;  
+  overflow-x: hidden;
+}
+
+.tabbox::-webkit-scrollbar {
+  width: 12px;
+  
+}
+
+.tabbox::-webkit-scrollbar-track{
+  background-color: var(--cream); /* or add it to the track */
+  border: 1px ridge var(--shade);
+}
+/* Add a thumb */
+.tabbox::-webkit-scrollbar-thumb {
+  border: 1px outset var(--shade);
+  background: var(--barcolor);
+}
+
+/* Buttons */
+.tabbox::-webkit-scrollbar-button:single-button {
+  background-color: var(--barcolor);
+  display: block;
+  border: 1px outset var(--shade);
+  height: 12px;
+  display: block;
+  background-size: 15px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Up */
+.tabbox::-webkit-scrollbar-button:single-button:vertical:decrement {
+  background-image: url("photos/arrow-up.png");
+}
+
+/* down */
+.tabbox::-webkit-scrollbar-button:single-button:vertical:increment {
+  background-image: url("photos/arrow-down.png");
+
+}
+
+.tabbox p{
+  margin-top: 0px;
+  margin-bottom: 4px;
+}
+/*
+.tabbox::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
+ 
+}
+
+.tabbox::-webkit-scrollbar-button:vertical:single-button:increment:hover {
+
+} */
+
+/* blog stuff */
+.card {
+  padding: 0px;
+  margin-top: 0px;
+}
+
+.blogcontent{ 
+  margin: 2px;
+  max-height: 35vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 8px;  
+  padding-left: 4px;
+  background-color: var(--green2);
+  border: var(--green) 2px inset;
+  box-shadow: 0px 0px 3px 0px black; 
+}
+
+.blogcontent p{
+  width: 90%;
+  word-break: break-word;
+  white-space: normal;
+  margin-left: 4px;
+  margin-top: -12px;
+  font-size: 12px;
+  font-family: 'MyWebFont';
+}
+
+.blogcontent::-webkit-scrollbar {
+  width: 12px;
+  
+}
+
+.blogcontent::-webkit-scrollbar-track{
+  background-color: var(--green2);
+  border: 1px ridge var(--shade);
+}
+
+.blogcontent::-webkit-scrollbar-thumb {
+  border: 1px outset var(--shade);
+  background: var(--barcolor);
+}
+
+.blogcontent::-webkit-scrollbar-button:single-button {
+  background-color: var(--barcolor);
+  display: block;
+  border: 1px outset var(--shade);
+  height: 12px;
+  display: block;
+  background-size: 15px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.blogcontent::-webkit-scrollbar-button:single-button:vertical:decrement {
+  background-image: url("photos/arrow-up.png");
+}
+
+.blogcontent::-webkit-scrollbar-button:single-button:vertical:increment {
+  background-image: url("photos/arrow-down.png");
+}
+
+
+/*collapsibles*/
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--green);
+  height: fit-content;
+  color: var(--green2);
+  font-size: 14px;
+  font-family: 'MyWebFont';
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: var(--green2);
+  color: var(--green);
+}
+  
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  height: fit-content;
+  padding: 25px 18px 0 18px;
+  display: none;
+  overflow: visible;
+  font-size: 14px;
+  font-family: 'MyWebFont';
+}
+/* Guest Book and Forms and Stuff */
+.form-input {
+    margin-bottom: 11px;
+}
+
+.form-input label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-input input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'MyWebFont';
+    font-size: 12px;
+}
+
+.btn button {
+    cursor: pointer;
+    background-color: #007BFF;
+    transition: background-color 0.4s ease;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.guest-card {
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 5px 0;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.btn button:hover {
+    background-color: #394b5e;
+}
+
+.guest-card h2 {
+    margin: 0;
+}
+
+.guest-card p {
+    margin: 5px 0;
+}
+
