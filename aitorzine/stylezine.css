@@ -1,0 +1,243 @@
+:root {
+    --banner: url("photos/banner1.png");
+    /* colors */
+    --dark: #000000;
+    --dark2: #000000;
+    --light: #FFFFFF;
+    --shade: #747071;
+    --barcolor: #000000;
+    --bgcolor: #000000;
+
+    --left: 2.5%;
+}
+@font-face {
+  font-family: poppins; /* set name */
+  src: url("fonts/Poppins-Regular.ttf"); /* url of the font */
+}
+@font-face {
+  font-family: cattalague; /* set name */
+  src: url("fonts/cattalague.regular.ttf"); /* url of the font */
+}
+@font-face {
+  font-family: poppinslight; /* set name */
+  src: url("fonts/Poppins-Light.ttf"); /* url of the font */
+}
+@font-face {
+  font-family: poppinsthin; /* set name */
+  src: url("fonts/Poppins-Thin.ttf"); /* url of the font */
+}
+
+body {
+    background-color: var(--bgcolor);
+    font-family: poppins;
+    text-align: left;
+    color: var(--light);
+}
+.banner{
+    border: solid 2px var(--dark);
+    height: 475px;
+    background-image: var(--banner);
+    background-size: auto 475px;
+    background-color: rgb(133, 133, 133);
+    background-blend-mode: multiply;
+}
+
+
+h1{
+    font-size: 46px;
+    margin-bottom: 0px;
+    margin-left: var(--left);
+}
+
+.notes{
+    font-size: 14px;
+    margin-top: -10px;
+    margin-left: var(--left);
+}
+
+.bar {
+    font-family: poppins;
+    color: var(--light);
+    margin: auto;
+    margin-bottom: -30px;
+    width: 95%;
+    height: fit-content;
+    overflow: hidden;
+    padding-left: 10px;
+    padding-right: 10px
+}
+a.button1:link, a.button1:visited{
+    font-family: poppins;
+    padding: 2px 6px;
+    /*border: solid 2px var(--light);*/
+    border: none;
+    color: var(--light);
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+    margin: 4px;
+}
+a.button1:hover, a.button1:active {
+    background-color: var(--light);
+    color: var(--barcolor);
+}
+
+.title {
+    font-family: poppins;
+    margin-top: -65px;
+    margin-left: var(--left);
+    font-size: 70px;
+    text-align: Left;
+    color: var(--light);
+}
+
+.articles{
+    font-family: poppins;
+    margin: auto;
+    text-align: center;
+}
+a.article:link, a.article:visited{
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px;
+    margin-top: -40px;
+    padding: 10px;
+    border: none;
+    background-color: var(--dark);
+    color: var(--light);
+    text-decoration: none;
+    transition: 0.3s;
+    text-align: left;
+    max-width: 420px;
+}
+a.article:hover, a.article:active {
+    background-color: var(--light);
+    color: var(--barcolor);
+}
+a.article img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    width: 95%;
+    display: block;
+    margin-bottom: 10px;
+}
+a.article h1{
+    margin-left: 2.5%;
+    font-size: 30px;
+}
+a.article p {
+    margin-left: 2.5%;
+    font-size: 14px;
+    margin-bottom: -25px;
+    padding: 0;
+}
+
+.box{
+    padding: 2px 6px;
+    border: solid 2px var(--light); 
+}
+
+.textbox{
+    margin: 20px;
+}
+
+.header{
+    font-family: poppins;
+    font-size: 40px;
+}
+
+.content{
+    width: 700px;
+    font-family: poppins;
+    margin-top: 10px;
+    margin: auto;
+}
+.content h1{
+    margin-left: 0px;
+    font-size: 36px;
+}
+.content h2{
+    font-family: poppinslight;
+    margin-left: 0px;
+    font-size: 28px;
+    margin-bottom: -20px;
+}
+.content p{
+    font-family: poppinsthin;
+    font-size: 24px;
+}
+
+a.basic:link, a.basic:visited{
+    text-decoration: none;
+    font-family: poppins;
+    color: var(--light);
+    transition: 0.3s;
+}
+a.basic:hover, a.basic:active {
+    background-color: var(--light);
+    color: var(--barcolor);
+}
+
+.image-container{
+    text-align: center;
+    margin: auto;
+}
+
+.image-container img{
+    width: 250px;
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+    object-fit: cover;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 80%;
+    transition: 0.5s;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+}
+
