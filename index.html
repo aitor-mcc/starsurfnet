@@ -28,72 +28,8 @@
 <link href="mystyle.css" rel="stylesheet">
 
 <!--My links-->
-<div id = "drag" style = "position: absolute; pointer-events: none;">
-  <div id = "dragheader" style="pointer-events: auto;"> 
-    <span class="winbody" style="display: inline-block; top: 220px; margin-left: 150px; margin-top: 150px; float: left;">
-      <span class="winbar">
-        <span id="buttx" onmousedown="this.style.backgroundImage='url(photos/buttpress_x.png)'"
-          onmouseup="this.style.backgroundImage='url(photos/butt_x.png)'">  
-        </span>
-        <p>
-        <img src="photos/explorer.png" style="position: relative; top: 2px; left: 2px; margin-right: 2px;">
-        Where to...?
-        </p>
-      </span>
-        <div style="height: auto; margin: 0px;">
-          <div class = "wincontent">
-            <div style = "float: left; width: auto; margin: 8px; ">
-              <div style = "text-align: center; font-size: 20px">
-                Explore My page!
-              </div>
-              <ul style="list-style: none; width: 200px; text-align: center; padding-left: 0px; margin: 3px;">
-                <li>
-                  <a id="about me" href="aboutme.html">
-                    <img src="photos/info_ico.png" style="display: inline; margin: 0px; margin-bottom: -1px;">
-                    <p style="font-size: 14px; display: inline;">. . . . . . . . . . . . about me</p>
-                  </a>
-                </li>
-                <li>
-                  <a id= "my favourite things" href="myfavouritethings.html">
-                    <img src="photos/butterfly.png" style="display: inline; margin: 0px; margin-bottom: -1px;">
-                    <p style="font-size: 14px; display: inline;"> . . . . my favourite things</p>
-                  </a>
-                </li>
-                <li>
-                  <a id= "music" href="mymusic.html">
-                    <img src="photos/music.png" style="display: inline; margin: 0px; margin-bottom: -1px;">
-                    <p style="font-size: 14px; display: inline;"> . . . . . . . . . . . . . . . music</p>
-                  </a>
-                </li>
-                <!--
-                <li>
-                  <a id= "my projects" href="myprojects.html">
-                    <img src="photos/command.png" style="display: inline; margin: 0px; margin-bottom: -1px;">
-                    <p style="font-size: 14px; display: inline;"> . . . . . . . . . . . my projects</p>
-                  </a>
-                </li>-->
-                <li>
-                  <a id= "blog" href="blablabla.html">
-                    <img src="photos/note.png" style="display: inline; margin: 0px; margin-bottom: -1px;">
-                    <p style="font-size: 14px; display: inline;"> . . . . . . . . . . . . . . . . . blog</p>
-                  </a>
-                </li>
-                <li>
-                  <a id= "guest book" href="https://starsurf.atabook.org/">
-                    <img src="photos/book.png" style="display: inline; margin: 0px; margin-bottom: -1px;">
-                    <p style="font-size: 14px; display: inline;"> . . . . . . . . . . . . guest book</p>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-
+<div id="navbar-container"></div>
+<script src="loadNavbar.js"></script>
 
 <div class = "centeredstuff">
   <!-- CENTER BOX -->
@@ -131,59 +67,9 @@
 </div> 
 
 
-<div id = "container">
-  <div id = "drag2" style = "display: inline-block; position: absolute; top: 0%; left: 67%; pointer-events: none;">
-    <div id = "drag2header" style="pointer-events: auto;"> 
-      <span class="winbody" style="display: inline-block; top: 220px; margin-left: 150px; margin-top: 150px; float: right;">
-        <span class="winbar">
-          <span id="buttx" onmousedown="this.style.backgroundImage='url(photos/buttpress_x.png)'"
-            onmouseup="this.style.backgroundImage='url(photos/butt_x.png)'">  
-          </span>
-          <p>
-          <img src="photos/mci.png" style="position: relative; top: 2px; left: 2px; margin-right: 2px;">
-          Before you leave...
-          </p>
-        </span>
-          <div style="height: auto; margin: 0px;">
-            <div class = "wincontent">
-              <div style = "float: left; width: auto; margin: 8px; ">
-                <div style = "text-align: center; font-size: 20px">
-                  My Other Accounts!
-                </div>
-                <ul style="list-style: none; width: 200px; text-align: center; padding-left: 0px; margin: 3px;">
-                  <li>
-                    <a id="youtube" href="https://youtube.com/@starfruit-surfrider?si=fEmshRsmxew34XtT">
-                      <img src="photos/video.png" style="display: inline; margin: 0px; margin-bottom: -1px;">
-                      <p style="font-size: 14px; display: inline;">. . . . . . . . . . . . youtube</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a id= "bandcamp" href="https://starfruitsurfrider.bandcamp.com/">
-                      <img src="photos/cd.png" style="display: inline; margin: 0px; margin-bottom: -1px;">
-                      <p style="font-size: 14px; display: inline;"> . . . . . . . . . . bandcamp</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a id= "rateyourmusic" href="https://rateyourmusic.com/~faye_valentine1">
-                      <img src="photos/music.png" style="display: inline; margin: 0px; margin-bottom: -1px;">
-                      <p style="font-size: 14px; display: inline;"> . . . . . . . rateyourmusic</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a id= "anilist" href="https://anilist.co/user/s3njou/">
-                      <img src="photos/playicon.png" style="display: inline; margin: 0px; margin-bottom: -1px;">
-                      <p style="font-size: 14px; display: inline;"> . . . . . . . . . . . . . anilist</p>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </span>
-    </div>
-  </div>
-</div>
+<!--my links-->
+<div id="accounts-container"></div>
+<script src="loadAccounts.js"></script>
 
 <!--just a draggable image box-->
 <div id = "container">
@@ -316,8 +202,10 @@
               </div>
               <div class = "tabbox" style = "max-height: 10vh; margin-top: -10px;">
                 <ul style = "margin-left: -25px; margin-top: -1px;">
-                  <li><p><a href = "https://youtu.be/C-ZjX3MW5aE?si=MFBpp9k_qN1d6slM">New Song!, Dec 27, 2025</a><p></li>
-                  <li><p>added bullet points to this tab, Dec 14, 2025<p></li>
+                  <li><p><a id= "zine" href="aitorzine/aitorzine.html">StarSurfZine</a></p>
+                  <li><p><a href = "https://youtu.be/nl-EJZ94vkM">Pizzicato V cover, Jan 21, 2026</a></p></li>
+                  <li><p><a href = "https://youtu.be/NiQEzHRv2VM">New Song!, Jan 9, 2026</a></p></li>
+                  <li><p>added bullet points to this tab, Dec 14, 2025</p></li>
                   <li><p><a href = "https://starsurf.neocities.org/blablabla">new blog entry, Dec 14, 2025</a></p></li>
                   <li><p>added weekly song widget!, Dec 13, 2025</p></li>
                   <li><p>font changed, Dec 13, 2025</p></li>
@@ -352,6 +240,33 @@
               <div id="top-track-container">
                 <!-- Track will be displayed here -->
                 <script src="topTrack.js"></script>
+              </div>
+            </div>
+          </div>
+        </div>
+      </span>
+    </div>
+  </div>
+</div>
+
+<!--star surf zine-->
+<div id = "container">
+  <div id = "drag8" style = "display: inline-block; position: absolute; top: 63%; left: 20%; pointer-events: none;">
+    <div id = "drag8header" style="pointer-events: auto;"> 
+      <span class="winbody" style="display: inline-block; top: 220px; margin-left: 150px; margin-top: 150px; float: right;">
+        <span class="winbar">
+          <span id="buttx" onmousedown="this.style.backgroundImage='url(photos/buttpress_x.png)'"
+            onmouseup="this.style.backgroundImage='url(photos/butt_x.png)'">  
+          </span>
+          <p>
+          <img src="aitorzine/photos/favicon.png" style="position: relative; top: 2px; left: 2px; margin-right: 2px; height: 16px;">
+            Check Out More Yap
+          </p>
+        </span>
+          <div style="height: auto; margin: 0px; width: fit-content;">
+            <div class = "wincontent">
+              <div style = "font-size: 32px;">
+                <a href = "aitorzine/aitorzine.html">StarSurfZine</a>
               </div>
             </div>
           </div>

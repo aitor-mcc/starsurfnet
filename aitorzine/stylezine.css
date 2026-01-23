@@ -37,7 +37,7 @@ body {
     border: solid 2px var(--dark);
     height: 475px;
     background-image: var(--banner);
-    background-size: auto 475px;
+    background-size: fill 475px;
     background-color: rgb(133, 133, 133);
     background-blend-mode: multiply;
 }

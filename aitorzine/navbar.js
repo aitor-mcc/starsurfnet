@@ -4,7 +4,7 @@ function loadNavbar() {
     <div class="bar">
       <p>
         <span style="float: left; font-size: 24px;">
-          Stuff I Like | Music | Culture
+          Stuff I Like | Music 
         </span>
         <span style="float: right; font-size: 24px;">
           <a class="button1" href="/aitorzine/aitorzine.html">Articles</a>
