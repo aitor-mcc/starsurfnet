@@ -166,7 +166,11 @@ a.article p {
 .content p{
     font-family: poppinsthin;
     font-size: 24px;
+}.content ul{
+    font-family: poppinsthin;
+    font-size: 24px;
 }
+
 
 a.basic:link, a.basic:visited{
     text-decoration: none;
