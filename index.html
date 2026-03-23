@@ -202,6 +202,7 @@
               </div>
               <div class = "tabbox" style = "max-height: 10vh; margin-top: -10px;">
                 <ul style = "margin-left: -25px; margin-top: -1px;">
+                  <li><p><a href = "https://youtu.be/Kj7rLk7XKXc">Persona 4 cover!! Mar 20, 2026</a></p></li>
                   <li><p><a href = "https://youtu.be/3eOc1y01cbE?si=_6Kk2RqwUiHe7LtW">New Song!, Feb 20, 2026</a></p></li>
                   <li><p><a id= "zine" href="aitorzine/01.html">StarSurfZine post on Pizzicato V's style</a></p>
                   <li><p><a id= "zine" href="aitorzine/aitorzine.html">StarSurfZine</a></p>
@@ -253,8 +254,8 @@
 
 <!--star surf zine-->
 <div id = "container">
-  <div id = "drag8" style = "display: inline-block; position: absolute; top: 63%; left: 20%; pointer-events: none;">
-    <div id = "drag8header" style="pointer-events: auto;"> 
+  <div id = "drag9" style = "display: inline-block; position: absolute; top: 63%; left: 20%; pointer-events: none;">
+    <div id = "drag9header" style="pointer-events: auto;"> 
       <span class="winbody" style="display: inline-block; top: 220px; margin-left: 150px; margin-top: 150px; float: right;">
         <span class="winbar">
           <span id="buttx" onmousedown="this.style.backgroundImage='url(photos/buttpress_x.png)'"
@@ -262,7 +263,7 @@
           </span>
           <p>
           <img src="aitorzine/photos/favicon.png" style="position: relative; top: 2px; left: 2px; margin-right: 2px; height: 16px;">
-            Check Out More Yap
+            Check Out More 
           </p>
         </span>
           <div style="height: auto; margin: 0px; width: fit-content;">
@@ -292,8 +293,10 @@ dragElement(document.getElementById("drag5"));
 dragElement(document.getElementById("drag6"));
 dragElement(document.getElementById("drag7"));
 dragElement(document.getElementById("drag8"));
+dragElement(document.getElementById("drag9"));
 
 function dragElement(elmnt) {
+  if (!elmnt) return;
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
   if (document.getElementById(elmnt.id + "header")) {
     /* if present, the header is where you move the DIV from:*/
