@@ -1,3 +1,3 @@
 Website yippie yay 
 
-it commits to neocities hopefullly
+lots of old stuff that is hidden away LOL
